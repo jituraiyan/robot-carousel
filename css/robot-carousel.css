@@ -1,0 +1,91 @@
+/* ----- COVER IMAGE ----- */
+
+.cover-image{
+    overflow: hidden;
+    position: relative;
+}
+.cover-image > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ----- ROBOT CAROUSEL ----- */
+
+.robot-carousel{
+    overflow: hidden;
+}
+.robot-slides {
+    
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+    transform: translateX(-200px); /* dynamic (.single-slide er width px, not 10%) */
+}
+.robot-slides .single-slide{
+    float: left;
+    display: block;
+    height: 400px;
+}
+.single-slide-info{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    background: #000;
+    transform: translateY(100%);
+    transition: all 0.3s linear;
+}
+.single-slide:hover .single-slide-info{
+    transform: translateY(0);
+}
+.robot-thumb-area{}
+.arrow{
+    float: left;
+    width: 5%;
+    position: relative;
+}
+.arrow i{
+    font-size: 23px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    line-height: 14px;
+}
+
+.robot-arrow-left i{
+    left: 0;
+}
+.robot-arrow-right i{
+    right: 0;
+}
+.robot-thumbs-show{
+    float: left;
+    width: 90%;
+    overflow: hidden;
+}
+.robot-thumb-area{
+    margin-top: 20px;
+}
+.robot-thumbs{
+    
+}
+.robot-thumbs .single-thumbs{
+    float: left;
+    position: relative;
+}
+.single-thumbs .cover-image{
+    position: relative;
+}
+.robot-thumbs .single-thumbs.active{}
+.robot-thumbs .single-thumbs .cover-image{
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.single-thumbs img{
+    cursor: pointer;
+}
